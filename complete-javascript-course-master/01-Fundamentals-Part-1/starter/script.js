@@ -101,8 +101,9 @@ console.log(x,y);
 const averageAge = (ageJonas + ageSarah) / 2;
 console.log(ageJonas, ageSarah, averageAge);
 
+//DAY 2:
 
-Coding Challenge #1
+//Coding Challenge #1
 Mark and John are trying to compare their BMI (Body Mass Index), which is
 calculated using the formula:
 BMI = mass / height ** 2 = mass / (height * height) (mass in kg
@@ -161,7 +162,7 @@ lines');
 console.log(`String with
 multiple
 lines`)
-*/
+
 
 const age = 19;
 
@@ -182,4 +183,135 @@ if (birthYear <= 2000) {
 }
 console.log(century);
 
-// Go through vid.18 last part once again
+//DAY 3:
+
+//Coding Challenge #2
+Use the BMI example from Challenge #1, and the code you already wrote, and improve it:
+
+1. Print a nice output to the console, telling the user who has the higher BMI. The message can be either:
+
+"Mark's BMI is higher than John's!" or "John's BMI is higher than Mark's!".
+
+2. Modify the outputs above to use template literals to include the BMI values in the outputs.
+
+Example: "Mark's BMI (28.3) is higher than John's (23.9)!" or "John's BMI (29.1) is higher than Mark's (27)!".
+
+
+const massMark = 78;
+const heightMark = 1.69;
+const massJohn = 92;
+const heightJohn = 1.95;
+
+const BMIMark = massMark / (heightMark * heightMark);
+const BMIJohn = massJohn / (heightJohn * heightJohn);
+console.log(BMIMark, BMIJohn)
+
+if(BMIMark > BMIJohn) {
+    console.log(`Mark's BMI (${BMIMark}) is higher than John's (${BMIJohn})!`)
+} else {
+    (BMIJohn > BMIMark)
+    console.log(`John's BMI (${BMIJohn}) is higher than Mark's (${BMIMark})!`)ring function
+}
+
+//type conversion
+const inputYear = '1991';
+console.log(inputYear + 18);
+console.log(Number(inputYear) + 18);
+
+// Trying if Number function converts string into number - No
+console.log(Number('Jonas'));
+
+// Here its Just number
+console.log(11);
+// Coverts number into string
+console.log(String(11));
+
+// type coercion
+console.log('I am ' + 23 + ' years old');
+  //IMP: Strings added to numbers in addition, is always a string
+console.log('23' + '10' + '3'); 
+console.log('23' + 10 + '3');
+console.log(Number(1+2+3) + '4');
+console.log(1 + 2 + 3 + '4');
+
+console.log('23' - '10' - '3');
+console.log('23' - 10 - '3');
+
+console.log('33' * '3');
+console.log('33' * 3);
+
+console.log('10' / '3');
+console.log('10' / 3);
+
+
+let n = '1' + 1; // '11'
+n = n - 1;
+console.log(n);
+
+console.log(Number(2+3+4) + '5');
+console.log(2 + 3 + 4 + '5');
+
+
+// 5 falsy values: 0, '', undefined, null, NaN
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean(NaN));
+console.log(Boolean(''));
+
+console.log(Boolean('Jonas'));
+console.log(Boolean({}));
+
+
+const money = 0;
+if (money) {
+    console.log("Don't spend it all!");
+} else {
+    console.log("You should get a job!");
+}
+
+let height = 0; // Even if its Zero, its undefined (falsy values)
+if (height) {
+    console.log("YAY! Height is defined");
+} else {
+    console.log("Height is UNDEFINED");
+}
+
+
+// const age = 18;
+// if (age === 18) {
+//     console.log('You just became an adult 1');
+// }
+
+// if (age == 18) {
+//     console.log('You just became an adult 2');
+// }
+
+// '1' == 1 (True)
+// '1' === 1 (False) (Better to always use === than ==)
+
+const age = '18';
+if (age === 18) {
+    console.log('You just became an adult 1');
+}
+
+if (age == 18) {
+    console.log('You just became an adult 2');
+}
+
+
+const favourite = Number(prompt("What's your favourite number?"));
+console.log(favourite);
+console.log(typeof favourite);
+
+if (favourite === 23) {
+    console.log('Cool! 23 is an amazing number!')
+} else if (favourite === 7) {
+    console.log('7 is also a cool number!')
+} else if (favourite === 9) {
+    console.log('9 is also a cool number!')    
+} else {
+    console.log('Number is not 23 or 7 or 9')
+}
+
+if(favourite !== 23) console.log('Why not 23?');
+*/
