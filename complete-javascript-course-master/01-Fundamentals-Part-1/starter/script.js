@@ -104,7 +104,7 @@ console.log(x,y);
 const averageAge = (ageJonas + ageSarah) / 2;
 console.log(ageJonas, ageSarah, averageAge);
 
-//DAY 2:
+// DAY 2:
 
 //Coding Challenge #1
 Mark and John are trying to compare their BMI (Body Mass Index), which is
@@ -186,7 +186,7 @@ if (birthYear <= 2000) {
 }
 console.log(century);
 
-//DAY 3:
+// DAY 3:
 
 //Coding Challenge #2
 Use the BMI example from Challenge #1, and the code you already wrote, and improve it:
@@ -493,4 +493,5 @@ console.log(`The Bill:${bill}, Tip:${tip}, Tip+Bill:${tip + bill}`);
 const bill = 430;
 const tip = bill >= 50 && bill <= 300 ? 0.15 * bill : 0.20 * bill;
 console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${tip + bill}`);
+
 */
