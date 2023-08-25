@@ -55,7 +55,7 @@ const yearsUntilRetirement = (birthYear,firstName) => {
     const age = 2023 - birthYear;
     const retirement = 65 - age;
     //return retirement;
-    return `${firstName} retiresin ${retirement} years`;
+    return `${firstName} retires in ${retirement} years`;
 }
 
 console.log(yearsUntilRetirement(1991, 'Jonas'));
@@ -108,4 +108,55 @@ Ignore draws this time. Instead, log No team wins... to the console if there is 
 TEST DATA 1: Dolphins scored 44, 23, and 71. Koalas scored 65, 54, and 49.
 
 TEST DATA 2: Dolphins scored 85, 54, and 41. Koalas scored 23, 34, and 27.
+
+
+const calcAverage = (a, b, c) => (a + b + c) / 3;
+console.log(calcAverage(1, 2, 3));
+
+
+let scoreDolphins = calcAverage(44, 23, 71);
+let scoreKoalas = calcAverage(65, 54, 49);
+console.log(scoreDolphins, scoreKoalas);
+
+const checkWinner = function (avgDolphins, avgKoalas) 
+{
+    if (avgDolphins >= 2 * avgKoalas) {
+        console.log(`Dolphins win (${avgDolphins} vs. ${avgKoalas})`);
+    } else if (avgKoalas >=2 * avgDolphins) {
+        console.log(`Koalas win (${avgKoalas} vs. ${avgDolphins})`);
+    } else {
+        console.log('No team wins...')
+    }
+}
+checkWinner(scoreDolphins, scoreKoalas);
+
+checkWinner(576, 111);
+
+//Test 2
+scoreDolphins = calcAverage(85, 54, 41);
+scoreKoalas = calcAverage(23, 34, 27);
+console.log(scoreDolphins, scoreKoalas);
+checkWinner(scoreDolphins, scoreKoalas);
 */
+
+//ARRAYS
+const friend1 = 'Micheal';
+const friend2 = 'Steven';
+const friend3 = 'Peter';
+
+const friends = ['Micheal', 'Steven', 'Peter'];
+console.log(friends);
+
+const years = new Array(1991, 1984, 2008, 2020);
+
+console.log(friends[0]);
+console.log(friends[2]);
+
+console.log(friends.length);
+console.log(friends[friends.length - 1]) // 3(0,1,2) elements -> 3-1 -> 2nd one displayed
+
+friends[2] = 'Jay';
+console.log(friends);
+
+
+
