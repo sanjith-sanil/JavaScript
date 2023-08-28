@@ -1,5 +1,3 @@
-// DAY 5:
-
 /*
 function logger() {
     console.log('My name is Sanjith');
@@ -61,10 +59,6 @@ const yearsUntilRetirement = (birthYear,firstName) => {
 console.log(yearsUntilRetirement(1991, 'Jonas'));
 console.log(yearsUntilRetirement(1991, 'Bob'));
 
-
-// DAY 6: Re-doing D5
-
-// DAY 7:
 
 // function cutPieces(fruit) {
 //     return fruit * 4;
@@ -206,8 +200,5 @@ console.log(friends);
 
 friends.shift(); //deleting at the start
 console.log(friends);
-
-
-
 
 
