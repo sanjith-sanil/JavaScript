@@ -134,7 +134,7 @@ checkWinner(scoreDolphins, scoreKoalas);
 */
 
 /*
-//ARRAYS
+//---ARRAYS---
 
 const friend1 = 'Micheal';
 const friend2 = 'Steven';
@@ -227,7 +227,7 @@ const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 console.log(bills, tips, total);
 
 
-//OBJECTS
+//---OBJECTS---
 
 const jonas = {
     firstName: 'Sanjith',
@@ -298,7 +298,6 @@ console.log(jonas.age);
 console.log(jonas.age);
 
 console.log(jonas.getSummary());
-*/
 
 //CHALLENGE #3
 const mark = {
@@ -332,3 +331,86 @@ function calcBMI() {
 }
  
 calcBMI();
+
+//---LOOPS---
+
+// console.log('Lifting weights repetition 1🏋🏻')
+// console.log('Lifting weights repetition 2🏋🏻')
+// console.log('Lifting weights repetition 3🏋🏻')
+// console.log('Lifting weights repetition 4🏋🏻')
+// console.log('Lifting weights repetition 5🏋🏻')
+// console.log('Lifting weights repetition 6🏋🏻')
+// console.log('Lifting weights repetition 7🏋🏻')
+// console.log('Lifting weights repetition 8🏋🏻')
+// console.log('Lifting weights repetition 9🏋🏻')
+// console.log('Lifting weights repetition 10🏋🏻')
+
+// for loop keeps running while condition is TRUE
+for(let rep = 1; rep <= 10; rep++) {
+    console.log(`Lifting weights repetition ${rep}🏋🏻`);
+}
+
+const jonas = [
+    'Jonas',
+    'Schmedtmann',
+    2023 - 2001,
+    'teacher',
+    ['Micheal', 'Peter', 'Steven'],
+    true
+];
+
+const types = [];
+
+// console.log(jonas[0])
+// console.log(jonas[1])
+// ...
+// console.log(jonas[4])
+// jonas[5] does NOT exist
+
+for (let i = 0; i < jonas.length; i++) {
+    console.log(jonas[i], typeof jonas[i]);
+
+    // Filling types array
+    // types[i] = typeof jonas[i];
+    types.push(typeof jonas[i]);
+}
+console.log(types);
+
+const years = [2001, 1980, 2006, 2012];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+    ages.push(2023 - years[i]);
+}
+console.log(ages);
+
+// continue and break
+console.log('--- ONLY STRINGS ---')
+for (let i = 0; i < jonas.length; i++) {
+    if(typeof jonas[i] !== 'string') continue;
+
+    console.log(jonas[i], typeof jonas[i]);
+}
+
+console.log('--- BREAK WITH NUMBER ---')
+for (let i = 0; i < jonas.length; i++) {
+    if(typeof jonas[i] === 'number') break;
+
+    console.log(jonas[i], typeof jonas[i]);
+}
+*/
+
+//looping backwards
+const jonas = [
+    'Jonas',
+    'Schmedtmann',
+    2023 - 2001,
+    'teacher',
+    ['Micheal', 'Peter', 'Steven']
+];
+
+for (let i = jonas.length - 1; i >= 0; i--) {
+    console.log(i, jonas[i]);
+}
+
+
