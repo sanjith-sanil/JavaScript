@@ -63,7 +63,6 @@ const calcTempAmplitudeNew = function (t1, t2) {
 };
 const amplitudeNew = calcTempAmplitudeNew([3, 5, 1], [9, 0, 5]);
 console.log(amplitudeNew);
-*/
 
 const measureKelvin = function () {
   const measurement = {
@@ -71,7 +70,7 @@ const measureKelvin = function () {
     unit: 'celsius',
 
     // C) FIX
-    // value: Number(prompt('Degrees celsius:')),
+    //value: Number(prompt('Degrees celsius:')),
     value: 10,
   };
 
@@ -100,12 +99,14 @@ const calcTempAmplitudeBug = function (t1, t2) {
     const curTemp = temps[i];
     if (typeof curTemp !== 'number') continue;
 
+    debugger;
     if (curTemp > max) max = curTemp;
     if (curTemp < min) min = curTemp;
   }
   console.log(max, min);
   return max - min;
 };
-const amplitudeBug = calcTempAmplitudeBug([3, 5, 1], [9, 0, 5]);
-// A)
+const amplitudeBug = calcTempAmplitudeBug([3, 5, 1], [9, 4, 5]);
+// A) IDENTIFY
 console.log(amplitudeBug);
+*/
